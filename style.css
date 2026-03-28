@@ -25,7 +25,7 @@
 
 }
 
-.calc-button,
+.num-button,
 .operand-button {
     flex-basis: 20%;
     aspect-ratio: 1 / 1;
@@ -36,12 +36,12 @@
     align-items: center;
 }
 
-.calc-button:hover, .operand-button:hover{
+.num-button:hover, .operand-button:hover{
     cursor: pointer;
     filter: brightness(90%);
 }
 
-.calc-button {
+.num-button {
     background-color: gray;
 }
 

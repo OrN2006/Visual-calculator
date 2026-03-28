@@ -3,7 +3,7 @@ const buttonContainer = document.querySelector(".buttons-container");
 
 function createButtons() {
     for (let i = 0; i < 10; i++) {
-        createButtonAndAppend(i, "calc-button");
+        createButtonAndAppend(i, "num-button");
     }
 
     const OPERATORS = ["+", "-", "*", "/", "=", "clear"]
@@ -21,6 +21,9 @@ function createButtonAndAppend(text, buttoClass) {
 }
 
 createButtons();
+
+
+
 
 function add(num1, num2){
     return num1 + num2;
