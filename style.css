@@ -12,6 +12,24 @@
 .result-container {
     background-color: rgb(109, 103, 103);
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-display {
+    height: 70%;
+    width: 90%;
+    background-color: white;
+    font-size: 3rem;
+    color: black;
+}
+
+.function {
+    /* PREVENT the text to overflow */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .buttons-container {
@@ -34,9 +52,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* PREVENT the user from selecting the text on the buttons while clicking */
+    user-select: none;
+    -webkit-user-select: none;
 }
 
-.num-button:hover, .operand-button:hover{
+.num-button:hover,
+.operand-button:hover {
     cursor: pointer;
     filter: brightness(90%);
 }
@@ -46,6 +69,6 @@
 }
 
 
-.operand-button{
+.operand-button {
     background-color: pink;
 }
